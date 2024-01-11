@@ -21,7 +21,7 @@
             "label": "Run Pydocstyle",
             "type": "shell",
             "windows": {
-                "command": "python",
+                "command": "${command:python.interpreterPath}",
                 "args": [
                     "-m",
                     "pydocstyle",
@@ -65,7 +65,7 @@
             "label": "Run flake8",
             "type": "shell",
             "windows": {
-                "command": "python",
+                "command": "${command:python.interpreterPath}",
                 "args": [
                     "-m",
                     "flake8",
@@ -115,7 +115,7 @@
             "label": "Set up basic testing requirements",
             "type": "shell",
             "windows": {
-                "command": "python",
+                "command": "${command:python.interpreterPath}",
                 "args": [
                     "-m",
                     "pip",
@@ -159,7 +159,7 @@
             "label": "Set up advanced testing requirements",
             "type": "shell",
             "windows": {
-                "command": "python",
+                "command": "${command:${command:python.interpreterPath}.interpreterPath}",
                 "args": [
                     "-m",
                     "pip",
@@ -206,7 +206,7 @@
                 "Set up basic testing requirements"
             ],
             "windows": {
-                "command": "python",
+                "command": "${command:python.interpreterPath}",
                 "args": [
                     "-m",
                     "pytest",
@@ -270,7 +270,7 @@
             "label": "Test exercise (no dependency checking)",
             "type": "shell",
             "windows": {
-                "command": "python",
+                "command": "${command:python.interpreterPath}",
                 "args": [
                     "-m",
                     "pytest",
